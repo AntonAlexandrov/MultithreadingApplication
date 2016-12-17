@@ -1,5 +1,0 @@
-package algorithm.search;
-
-public class LinearSearch extends Thread{
-	int[] intArray = {1, 2, 4, 10, 7, 8, 5, 11, 6, 9, 3, 12};
-}
