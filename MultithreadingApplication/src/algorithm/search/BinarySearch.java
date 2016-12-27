@@ -18,18 +18,17 @@ public class BinarySearch extends Thread{
 	
 	public void run(){
 		System.out.println("Running " + threadName);
-		System.out.println("The list is: " + intList);
+		System.out.println(threadName + ": The list is: " + intList);
 		
 		Integer begin = 0;
 		Integer end = intList.size() - 1;
-		Integer middle = -1;
+		Integer middle = -1; /*initialize it to some invalid value*/
 		
 		while(begin <= end){
-			middle = begin + (end - begin) / 2;
-//			middle = end + begin / 2; 
+			middle = begin + (end - begin) / 2; 
 			
 			if(intList.get(middle) == searchedItem){
-				System.out.println("The searched item '" + searchedItem + "' is at index '" + middle + "'");
+				System.out.println(threadName + ": The searched item '" + searchedItem + "' is at index '" + middle + "'");
 				break;
 			} else if(intList.get(middle) > searchedItem){
 				end = middle - 1;
@@ -39,7 +38,7 @@ public class BinarySearch extends Thread{
 		}
 		
 		if(intList.get(middle) != searchedItem){
-			System.out.println("The searched item '" + searchedItem + "' was not found");
+			System.out.println(threadName + ": The searched item '" + searchedItem + "' was not found");
 		}
 		
 		System.out.println("Exiting " + threadName);		

@@ -16,7 +16,7 @@ public class BubbleSort extends Thread{
 	
 	public void run(){
 		System.out.println("Running: " + threadName);
-		System.out.println("The list is: " + intList);
+		System.out.println(threadName + ": The list is: " + intList);
 		
 		int size = intList.size();
 		boolean swap = false;
@@ -38,7 +38,7 @@ public class BubbleSort extends Thread{
 			}
 		}
 		
-		System.out.println("The sorted list is: " + intList);
+		System.out.println(threadName + ": The sorted list is: " + intList);
 		System.out.println("Exiting " + threadName);
 	}
 	

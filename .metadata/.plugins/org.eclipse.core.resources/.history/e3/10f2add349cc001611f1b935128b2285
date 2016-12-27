@@ -1,0 +1,20 @@
+package generators;
+
+import java.io.IOException;
+
+public class FileGenerator {
+	private FileGenerator(){} /*a private constructor*/
+	
+	private List<Long> listLong;
+	
+	public static boolean GenerateFile() throws IOException{
+		try{
+			
+			
+		} catch (IOException e){
+			
+		}
+	}
+	
+	private 
+}

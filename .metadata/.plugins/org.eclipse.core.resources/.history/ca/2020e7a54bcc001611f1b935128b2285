@@ -1,0 +1,27 @@
+package algorithm.sort;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class InsertionSort extends Thread{
+	private Thread t;
+	private String threadName;
+	private List<Integer> intList;
+	
+	public InsertionSort(String threadName, List<Integer> intList){
+		this.threadName = threadName;
+		this.intList = new ArrayList<Integer>(intList);		
+	}
+	
+	public void run(){
+		
+	}
+	
+	public void start(){
+		if(t == null){
+			t = new Thread(this, threadName);
+			t.start();
+		}
+	}
+
+}
