@@ -32,8 +32,7 @@ public class BubbleSort extends Thread{
 					
 					swap = true;
 				}
-			}
-			
+			}			
 			if(!swap){
 				break;
 			}

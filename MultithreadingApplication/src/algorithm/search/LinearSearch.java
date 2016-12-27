@@ -1,5 +1,6 @@
 package algorithm.search;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class LinearSearch extends Thread{
@@ -10,7 +11,7 @@ public class LinearSearch extends Thread{
 	
 	public LinearSearch(String threadName, List<Integer> intList, Integer searchedItem){
 		this.threadName = threadName;
-		this.intList = intList;
+		this.intList = new ArrayList<Integer>(intList);
 		this.searchedItem = searchedItem;
 		System.out.println("Creating " + threadName);
 	}
