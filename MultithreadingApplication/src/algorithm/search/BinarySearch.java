@@ -1,7 +1,6 @@
 package algorithm.search;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class BinarySearch extends Thread{
@@ -23,9 +22,9 @@ public class BinarySearch extends Thread{
 		
 		Integer begin = 0;
 		Integer end = intList.size() - 1;
-		Integer middle;
+		Integer middle = -1;
 		
-		while(true){
+		while(begin <= end){
 			middle = begin + (end - begin) / 2;
 //			middle = end + begin / 2; 
 			
@@ -37,6 +36,10 @@ public class BinarySearch extends Thread{
 			} else /*if(intList.get(middle) < searchedItem)*/{
 				begin = middle + 1;
 			}
+		}
+		
+		if(intList.get(middle) != searchedItem){
+			System.out.println("The searched item '" + searchedItem + "' was not found");
 		}
 		
 		System.out.println("Exiting " + threadName);		

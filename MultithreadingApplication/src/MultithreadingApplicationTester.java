@@ -8,7 +8,7 @@ import algorithm.sort.BubbleSort;
 public class MultithreadingApplicationTester {
 	public static void main(String args[]){
 		List<Integer> intList = Arrays.asList(1, 2, 4, 10, 17, 18, 25, 31, 36, 49, 53, 62);
-		Integer searchedItem = 53;
+		Integer searchedItem = 25;
 		
 //		LinearSearch linearSearch = new LinearSearch("LinearSearch", intList, searchedItem);
 //		BubbleSort bubbleSort = new BubbleSort("BubbleSort", intList);
