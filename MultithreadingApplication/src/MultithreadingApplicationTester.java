@@ -5,6 +5,7 @@ import algorithm.search.BinarySearch;
 import algorithm.search.LinearSearch;
 import algorithm.sort.BubbleSort;
 import algorithm.sort.InsertionSort;
+import algorithm.sort.SelectionSort;
 
 public class MultithreadingApplicationTester {
 	public static void main(String args[]){
@@ -18,10 +19,12 @@ public class MultithreadingApplicationTester {
 		BubbleSort bubbleSort = new BubbleSort("BubbleSort", sortList);
 		BinarySearch binarySearch = new BinarySearch("BinarySearch", searchList, searchedItem);
 		InsertionSort insertionSort = new InsertionSort("InsertionSort", sortList);
+		SelectionSort selectionSort = new SelectionSort("SelectionSort", sortList);
 		
 		linearSearch.start();
 		bubbleSort.start();
 		binarySearch.start();
-		insertionSort.start();		
+		insertionSort.start();
+		selectionSort.start();
 	}
 }
