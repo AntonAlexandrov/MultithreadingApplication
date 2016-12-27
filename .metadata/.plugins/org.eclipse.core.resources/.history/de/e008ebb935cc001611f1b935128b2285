@@ -1,0 +1,31 @@
+package algorithm.search;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class BinarySearch extends Thread{
+	private Thread t;
+	private String threadName;
+	private List<Integer> intList;
+	private Integer searchedItem;
+	
+	public BinarySearch(String threadName, List<Integer> intList, Integer searchedItem){
+		this.threadName = threadName;
+		this.intList = new ArrayList<Integer>(intList);
+		this.searchedItem = searchedItem;
+		System.out.println("Creating " + threadName);
+	}
+	
+	public void run(){
+		
+	}
+	
+	public void start(){
+		System.out.println("Starting " + threadName);
+		if(t == null){
+			t = new Thread(this, threadName);
+			t.start();
+		}
+	}
+}

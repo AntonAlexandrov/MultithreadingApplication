@@ -1,0 +1,8 @@
+package algorithm.search;
+
+import java.util.List;
+
+public interface Search {
+	<T> void setList(List<T> list);
+	<T> List<T> getList();
+}

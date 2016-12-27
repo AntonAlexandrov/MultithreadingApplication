@@ -1,0 +1,10 @@
+package algorithm.search;
+
+import java.util.List;
+
+public class BinarySearch extends Thread{
+	private Thread t;
+	private String threadName;
+	private List<Integer> intList;
+	private Integer searchedItem;
+}
